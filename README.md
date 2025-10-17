@@ -38,8 +38,7 @@ Versionnez votre code avec **Git** dès le début et hébergez le projet sur **G
 ### ✅ Objectifs
 
 * Installer votre éditeur de code (VS Code recommandé).
-* Créer ou cloner le projet Booki sur votre machine.
-* Initialiser le dépôt Git et le publier sur GitHub.
+* Récupérer la base de code sur votre machine.
 * Vérifier que le site s’affiche dès le départ avec le code fourni.
 
 ### 🧩 Conseils
@@ -232,7 +231,7 @@ Adapter le site aux **tablettes et mobiles**.
 
 1. Un **site complet et conforme** aux maquettes (desktop, tablette, mobile).
 2. Un **code propre, accessible et responsive**, validé par les validateurs W3C.
-3. Un **dépôt GitHub public** contenant :
+3. Un **dépôt GitHub public** ou un zip contenant :
 
    * le code complet du site,
    * un `README.md` expliquant votre travail,
