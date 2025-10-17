@@ -1,12 +1,18 @@
+# 🌍 Projet : Créez la page d’accueil du site **Booki**
 
-# 🧠 Projet : Créez la page d’accueil du site **Booki**
+## 🔗 Ressource principale
+
+➡️ **Lien vers les maquettes Figma à respecter :**
+[https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0](https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0)
+
+---
 
 ## 🎯 Objectif du projet
 
 Vous débutez votre alternance en tant que **développeur web** au sein de la start-up **Booki**.
-L’entreprise souhaite développer un site qui permette aux usagers de **trouver des hébergements et des activités** dans la ville de leur choix.
+L’entreprise souhaite développer un site Internet qui permette aux usagers de **trouver des hébergements et des activités** dans la ville de leur choix.
 
-Votre mission : **intégrer l’interface du site** à partir de maquettes, en utilisant uniquement **HTML et CSS**.
+Votre mission : **intégrer l’interface du site** à partir des maquettes fournies, en utilisant uniquement **HTML** et **CSS**.
 
 Vous travaillerez à partir :
 
@@ -18,12 +24,12 @@ Vous travaillerez à partir :
 
 ## 📂 Structure du projet fournie
 
-* `index.html` : squelette de base à compléter ;
-* `css/` : dossier contenant un ou plusieurs fichiers CSS à enrichir ;
-* `images/` : dossier avec les images à utiliser.
+* `index.html` — squelette HTML à compléter
+* `css/` — dossier contenant le ou les fichiers CSS à enrichir
+* `images/` — dossier avec les images à utiliser
 
-Conservez **cette structure de fichiers** pour toute la durée du projet.
-Versionnez votre code avec **Git** dès le début du développement et hébergez le projet sur **GitHub** (repository public).
+Conservez **cette structure de fichiers** tout au long du développement.
+Versionnez votre code avec **Git** dès le début et hébergez le projet sur **GitHub** (repository public).
 
 ---
 
@@ -32,15 +38,15 @@ Versionnez votre code avec **Git** dès le début du développement et hébergez
 ### ✅ Objectifs
 
 * Installer votre éditeur de code (VS Code recommandé).
-* Cloner ou créer le projet Booki sur votre machine.
+* Créer ou cloner le projet Booki sur votre machine.
 * Initialiser le dépôt Git et le publier sur GitHub.
 * Vérifier que le site s’affiche dès le départ avec le code fourni.
 
 ### 🧩 Conseils
 
-* Conservez bien les balises `<link>` d’import des polices et icônes déjà présentes dans le HTML.
-* Si le CSS ne s’applique pas, vérifiez que le lien vers le fichier CSS est correct.
-* Utilisez les outils de développement (Inspecteur, Console, etc.) pour debugger.
+* Conservez bien les balises `<link>` d’import de polices et d’icônes déjà présentes dans le HTML.
+* Si le CSS ne s’applique pas, vérifiez que le lien vers le fichier est correct.
+* Utilisez les **outils de développement** de votre navigateur pour debugger.
 
 ---
 
@@ -48,11 +54,11 @@ Versionnez votre code avec **Git** dès le début du développement et hébergez
 
 ### ✅ Objectif
 
-Analyser les maquettes pour identifier les zones principales et planifier le HTML.
+Analyser les maquettes pour identifier les zones principales et planifier la structure HTML.
 
 ### 🔍 Questions à se poser
 
-* Quels sont les éléments visibles sur la maquette ? (logo, navigation, formulaire, cartes, filtres, etc.)
+* Quels sont les éléments visibles sur la maquette ? (logo, navigation, recherche, filtres, cartes, etc.)
 * Comment sont regroupés ces éléments ?
 * Quelle balise HTML correspond à chaque composant ?
 * Les éléments doivent-ils être positionnés horizontalement (ex. filtres) ou verticalement (ex. liste d’hébergements) ?
@@ -79,7 +85,7 @@ Intégrer l’en-tête du site à partir de la maquette desktop :
 ### ⚠️ Points de vigilance
 
 * En desktop, la bordure bleue est en haut ; en mobile, elle passe en bas.
-* Privilégiez les **pixels** pour marges et paddings (plus stables entre formats d’écran).
+* Privilégiez les **pixels** pour marges et paddings.
 
 ---
 
@@ -91,9 +97,9 @@ Intégrer le formulaire de recherche de la page d’accueil.
 
 ### 💡 Conseils
 
-* Reprenez la structure HTML du formulaire selon la maquette.
-* Assurez-vous que le champ de saisie et le bouton s’affichent correctement.
+* Respectez la structure HTML indiquée dans la maquette.
 * Utilisez des balises accessibles (`label`, `placeholder`, `aria-label`).
+* Vérifiez la cohérence du design avec les trois versions (desktop, tablette, mobile).
 
 ---
 
@@ -101,18 +107,18 @@ Intégrer le formulaire de recherche de la page d’accueil.
 
 ### ✅ Objectif
 
-Créer la barre de filtres présente sous la recherche.
+Créer la barre de filtres située sous la recherche.
 
 ### 💡 Conseils
 
 * Utilisez **Flexbox** pour aligner les filtres horizontalement.
 * Les boutons doivent changer de **couleur de fond au survol**.
-* Utilisez des marges cohérentes entre les boutons.
+* Respectez les espacements et les arrondis visibles sur les maquettes.
 
 ### ⚠️ Points de vigilance
 
-* Préférez les **pixels** aux pourcentages pour les espacements.
-* Gardez une structure claire et réutilisable : chaque filtre doit pouvoir être dupliqué facilement.
+* Utilisez les **pixels** pour les espacements (pas de pourcentages).
+* Structurez le HTML pour que chaque bouton soit réutilisable.
 
 ---
 
@@ -120,54 +126,54 @@ Créer la barre de filtres présente sous la recherche.
 
 ### ✅ Objectif
 
-Réaliser une première **card d’hébergement** conforme à la maquette.
+Réaliser une première **carte d’hébergement** conforme à la maquette.
 
 ### 💡 Conseils
 
 * Les cartes “hébergements” et “les plus populaires” ont une structure similaire.
-* Définissez des largeurs en **%** et des hauteurs fixes en **px**.
-* Pour les images, utilisez `object-fit: cover` pour éviter la déformation.
-* Intégrez toujours les images via le HTML avec des attributs `alt` descriptifs.
+* Définissez les largeurs en **%** et les hauteurs fixes en **px**.
+* Utilisez `object-fit: cover` pour ajuster les images.
+* Ajoutez un attribut `alt` pertinent à chaque image.
 
 ### ⚠️ Points de vigilance
 
-* Vérifiez la présence de bordures arrondies et d’ombres sur les cartes.
-* Ne dupliquez pas de styles inutiles.
+* Vérifiez la présence de bordures arrondies et d’ombres.
+* Ne dupliquez pas inutilement le code.
 
 ---
 
-## 🏙️ Étape 7 — Mettre en page la section “Hébergements à Marseille”
+## 🏙️ Étape 7 — Mettre en page “Hébergements à Marseille”
 
 ### ✅ Objectif
 
-Afficher les **6 cartes hébergements** et la colonne **“Les plus populaires”**.
+Afficher les **6 cartes d’hébergements** et la section **“Les plus populaires”**.
 
 ### 💡 Conseils
 
-* Dupliquez la carte réalisée à l’étape 6.
+* Dupliquez la carte réalisée à l’étape précédente.
 * Utilisez **Flexbox** pour organiser la grille.
-* Remplissez chaque carte avec les contenus exacts des maquettes.
-* N’oubliez pas le **titre**, l’icône, et le lien “Afficher plus”.
+* Remplissez chaque carte avec le contenu exact des maquettes.
+* N’oubliez pas le titre, l’icône et le lien “Afficher plus”.
 
 ### ⚠️ Points de vigilance
 
-* En responsive, l’ordre d’affichage change entre desktop, tablette et mobile.
-* Conservez la sémantique HTML correcte (`section`, `article`, etc.).
+* L’ordre d’affichage change selon le format d’écran.
+* Utilisez des balises sémantiques (`section`, `article`, etc.).
 
 ---
 
-## 🌆 Étape 8 — Intégrer la section “Activités à Marseille”
+## 🌆 Étape 8 — Intégrer “Activités à Marseille”
 
 ### ✅ Objectif
 
-Créer la section présentant les **activités**.
+Créer la section présentant les **activités** à Marseille.
 
 ### 💡 Conseils
 
-* Présentez les activités sous forme de **cartes verticales** ou en **grille** selon la maquette.
-* La hauteur des images doit être uniforme.
-* Utilisez à nouveau `object-fit: cover`.
-* Intégrez chaque image en HTML avec un `alt` cohérent.
+* Disposez les cartes verticalement ou en grille selon la version.
+* Uniformisez la hauteur des images.
+* Utilisez `object-fit: cover`.
+* Respectez les espacements et les bordures visibles sur la maquette.
 
 ---
 
@@ -175,13 +181,13 @@ Créer la section présentant les **activités**.
 
 ### ✅ Objectif
 
-Mettre en place le pied de page en **3 colonnes** égales.
+Mettre en place le pied de page en **3 colonnes égales**.
 
 ### 💡 Conseils
 
-* Utilisez Flexbox pour l’organisation.
-* Si vous utilisez des listes (`ul`), pensez à supprimer le `padding-left` par défaut.
-* Respectez l’ordre des éléments et la hiérarchie des titres.
+* Utilisez **Flexbox** pour l’organisation.
+* Supprimez les marges par défaut des listes (`ul`).
+* Respectez la hiérarchie des titres et des liens.
 
 ---
 
@@ -193,13 +199,13 @@ Adapter le site aux **tablettes et mobiles**.
 
 ### 💡 Conseils
 
-* Utilisez les **media queries** :
+* Utilisez des **media queries** :
 
   * `max-width: 1024px` → affichage tablette
   * `max-width: 768px` → affichage mobile
 * Conservez la meta `<viewport>` dans le HTML.
-* Fixez une largeur maximum à `1440px` et une largeur minimum à `320px`.
-* Les couleurs de fond de certaines sections changent entre les versions.
+* Fixez une largeur max à `1440px` et une min à `320px`.
+* Ajustez les couleurs de fond selon la maquette.
 
 ---
 
@@ -207,16 +213,16 @@ Adapter le site aux **tablettes et mobiles**.
 
 ### 💡 Contrôles à effectuer
 
-* Validez le HTML et le CSS via les **validateurs W3C**.
-* Vérifiez la **lisibilité du code** et la **cohérence du nommage** (kebab-case).
-* Assurez-vous que les balises HTML sont correctement imbriquées.
-* Vérifiez les **contrastes de couleurs** et la **navigation clavier**.
+* Validez le code avec les validateurs HTML et CSS du W3C.
+* Vérifiez la lisibilité et la cohérence du nommage (`.main-wrapper`, `.filter-button`, etc.).
+* Testez la navigation au clavier.
+* Vérifiez les contrastes de couleur et l’accessibilité.
 
-### 💬 Conseils de finition
+### 🧹 Conseils de finition
 
-* Corrigez les erreurs signalées par les validateurs.
-* Supprimez les commentaires ou styles inutilisés.
-* Votre projet doit être **fonctionnel et responsive** sur tous les écrans.
+* Corrigez les erreurs critiques signalées.
+* Nettoyez le code (pas de styles inutilisés).
+* Vérifiez le rendu sur plusieurs navigateurs et tailles d’écran.
 
 ---
 
@@ -224,11 +230,10 @@ Adapter le site aux **tablettes et mobiles**.
 
 À la fin du projet, vous devez livrer :
 
-1. Un **site web complet** conforme aux maquettes (desktop, tablette, mobile).
-2. Un **code propre, accessible et responsive**, validé par les outils W3C.
+1. Un **site complet et conforme** aux maquettes (desktop, tablette, mobile).
+2. Un **code propre, accessible et responsive**, validé par les validateurs W3C.
 3. Un **dépôt GitHub public** contenant :
 
-   * le dossier complet du site,
-   * un fichier `README.md` décrivant votre travail,
-   * (facultatif) un rapport d’accessibilité.
-
+   * le code complet du site,
+   * un `README.md` expliquant votre travail,
+   * un mini rapport d’accessibilité (facultatif).
